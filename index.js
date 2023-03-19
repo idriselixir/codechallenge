@@ -25,3 +25,16 @@ function showGrade() {
     // display grade
     document.getElementById("result").innerHTML = "The student's grade is: " + grade;
   }
+
+  function checkSpeed() {
+    const speed = document.getElementById('speed').value;
+    const points = Math.floor((speed - 70) / 5);
+    
+    if (speed < 70) {
+      console.log('Ok');
+    } else if (points > 12) {
+      console.log('License suspended');
+    } else {
+      console.log('Points: ' + points);
+    }
+  }
